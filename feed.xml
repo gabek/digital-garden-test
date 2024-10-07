@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:base="https://gabek.github.io/digital-garden-test/">
+    <title>Gabe&#39;s Digital Life</title>
+    <link href="https://gabek.github.io/digital-garden-test//feed.xml" rel="self" >
+    <link href="https://gabek.github.io/digital-garden-test/" >
+    <updated>2024-10-07T23:14:29Z</updated>
+    <id>https://gabek.github.io/digital-garden-test/</id>
+        <entry>
+            <title>
+                Owncast&#39;s 4th Anniversary
+                
+            </title>
+            <updated>2024-10-07T23:14:19Z</updated>
+            <id>https://gabek.github.io/digital-garden-test//</id>
+            <content type="html">
+                &lt;p&gt;May 23rd, 2024 marks the 4th anniversary of the first commit of Owncast, aptly titled: “WIP”.&lt;/p&gt;
+&lt;h2 id=&quot;wip&quot; tabindex=&quot;-1&quot;&gt;WIP&lt;/h2&gt;
+&lt;p&gt;It was a bit before that when I actually started working on it in earnest, but not that far before. I remember duct taping a proof of concept together, opening my laptop&#39;s web port to the public internet, messaging somebody and asking “Could you open this URL in VLC or QuickTime or something?”. Since there was no web interface or player, I just wanted to see if video would play for somebody over the internet. When I was told it worked, I went from asking “I wonder if this is possible” to knowing it was possible.&lt;/p&gt;
+&lt;h2 id=&quot;what-specifically-was-happening-four-years-ago&quot; tabindex=&quot;-1&quot;&gt;What specifically was happening four years ago?&lt;/h2&gt;
+&lt;p&gt;For fun, I took a look at what the first month of Owncast commits looked like, and I don&#39;t remember things moving so fast. At that time, it already:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Had native support for serving video via S3 compatible providers.&lt;/li&gt;
+&lt;li&gt;There were two additional contributors apart from me.&lt;/li&gt;
+&lt;li&gt;Chat had a fair bit of functionality.&lt;/li&gt;
+&lt;li&gt;Video transcoding was completely customizable.&lt;/li&gt;
+&lt;li&gt;It had persistent viewer statistics.&lt;/li&gt;
+&lt;li&gt;Documentation existed, including a quickstart guide.&lt;/li&gt;
+&lt;li&gt;A build script and Dockerfile allowed for relatively easy building.&lt;/li&gt;
+&lt;li&gt;You could customize your page content with Markdown.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Here are some other things that were going on at that time that never made it to where we are now:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;It had native support for serving video via IPFS.&lt;/li&gt;
+&lt;li&gt;The web interface was built with Vue + Tailwind.&lt;/li&gt;
+&lt;li&gt;Your chat username color was determined by a color hash of your username itself.&lt;/li&gt;
+&lt;li&gt;Chat had user avatars.&lt;/li&gt;
+&lt;li&gt;Chat showed embeds when links were shared, including images.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;where-i-started-is-not-where-it-s-been&quot; tabindex=&quot;-1&quot;&gt;Where I started is not where it&#39;s been&lt;/h2&gt;
+&lt;p&gt;It&#39;s remarkable how fast things move at first on any kind of project, and then as it starts to take shape it slows down and becomes a bit more methodical. Once the core functionality is built and it “works”, then you have to think about what&#39;s next. I suppose Owncast could have stopped right there. But I wanted it to be even easier to use, and more customizable. The more people who started using it, the more feedback I&#39;d get, I started to get a picture of the long-term direction of the project and its features. And that direction is still what we&#39;re going from today. I wouldn&#39;t blame you if you thought I didn&#39;t listen to your suggestions, but I promise that&#39;s not true. The specific thing you request might not happen, but the spirit of what you&#39;re asking for heavily influences the trajectory of the project, and can turn into something that&#39;s useful for a wider user base.&lt;/p&gt;
+&lt;p&gt;Four years ago, Owncast to me, was a free and open source, self-hosted live video server. And since people who live stream also often enjoy having chat, it would be useful to bundle in a little optional minimal chat side feature as well. But the focus was always the video. It&#39;s funny how much time and attention has gone into web interfaces (three entirely different implementations!) and chat over these years, when that has nothing to do with opening VLC and playing back a video stream. It&#39;s still a balancing act to this day, since some people care very, very much about chat, social features, the public directory, and interactivity. Others aren&#39;t concerned with those at all.&lt;/p&gt;
+&lt;h2 id=&quot;what-s-up&quot; tabindex=&quot;-1&quot;&gt;What&#39;s up?&lt;/h2&gt;
+&lt;p&gt;It&#39;s never a good time, but I&#39;m looking at the backend codebase that began four years ago. As with anything that was started very small, and you build on top of it long enough, there&#39;s a point where at least some changes need to be made. Primarily because some of the things that are on our roadmap simply aren&#39;t possible with how the backend is architected. So while it&#39;s a messy undertaking, I think it&#39;s a valuable one, and it&#39;s happening now, so the really cool stuff can continue to get built after that.&lt;/p&gt;
+&lt;h2 id=&quot;thank-you&quot; tabindex=&quot;-1&quot;&gt;Thank You&lt;/h2&gt;
+&lt;p&gt;Thank you for the four-year journey. Your patience, your kindness, your contributions, your feedback, your encouragement, your donations, and for sharing your Owncast-powered live streams with me. Every so often I look at a screen full of those streams and I can&#39;t believe I had some small part in helping you build them. It continues to mean the world to me that you let me be involved.&lt;/p&gt;
+&lt;p&gt;I&#39;m still excited about Owncast every day. I can&#39;t say there hasn&#39;t been periods of burnout, and doubt. And if I didn&#39;t have an opportunity to see you out there using Owncast, maybe some of those periods would have been the end of it. But all of you keep it alive. At the end of the day, Owncast only exists because you use it. Everything else is an implementation detail.&lt;/p&gt;
+&lt;p&gt;Here&#39;s to another four, five, ten years when Owncast will still be a “WIP”.&lt;/p&gt;
+
+            </content>
+            <link href="https://gabek.github.io/digital-garden-test//" >
+        </entry>
+</feed>
