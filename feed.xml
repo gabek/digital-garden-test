@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom" xml:base="https://gabek.github.io/digital-garden-test/">
+<feed xmlns="http://www.w3.org/2005/Atom" xml:base="https://garden.gabekangas.com">
     <title>Gabe&#39;s Digital Life</title>
-    <link href="https://gabek.github.io/digital-garden-test//feed.xml" rel="self" >
-    <link href="https://gabek.github.io/digital-garden-test/" >
-    <updated>2024-10-07T23:34:12Z</updated>
-    <id>https://gabek.github.io/digital-garden-test/</id>
+    <link href="https://garden.gabekangas.com/feed.xml" rel="self" >
+    <link href="https://garden.gabekangas.com" >
+    <updated>2024-10-07T23:36:25Z</updated>
+    <id>https://garden.gabekangas.com</id>
         <entry>
             <title>
                 Owncast&#39;s 4th Anniversary
                 
             </title>
-            <updated>2024-10-07T23:34:02Z</updated>
-            <id>https://gabek.github.io/digital-garden-test//</id>
+            <updated>2024-10-07T23:36:17Z</updated>
+            <id>https://garden.gabekangas.com/</id>
             <content type="html">
                 &lt;p&gt;May 23rd, 2024 marks the 4th anniversary of the first commit of Owncast, aptly titled: “WIP”. xx&lt;/p&gt;
 &lt;h2 id=&quot;wip&quot; tabindex=&quot;-1&quot;&gt;WIP&lt;/h2&gt;
@@ -47,6 +47,6 @@
 &lt;p&gt;Here&#39;s to another four, five, ten years when Owncast will still be a “WIP”.&lt;/p&gt;
 
             </content>
-            <link href="https://gabek.github.io/digital-garden-test//" >
+            <link href="https://garden.gabekangas.com/" >
         </entry>
 </feed>
