@@ -3,17 +3,17 @@
     <title>Gabe&#39;s Digital Life</title>
     <link href="https://garden.gabekangas.com/feed.xml" rel="self" >
     <link href="https://garden.gabekangas.com" >
-    <updated>2024-10-07T23:36:25Z</updated>
+    <updated>2024-10-07T23:36:37Z</updated>
     <id>https://garden.gabekangas.com</id>
         <entry>
             <title>
                 Owncast&#39;s 4th Anniversary
                 
             </title>
-            <updated>2024-10-07T23:36:17Z</updated>
+            <updated>2024-10-07T23:36:29Z</updated>
             <id>https://garden.gabekangas.com/</id>
             <content type="html">
-                &lt;p&gt;May 23rd, 2024 marks the 4th anniversary of the first commit of Owncast, aptly titled: “WIP”. xx&lt;/p&gt;
+                &lt;p&gt;May 23rd, 2024 marks the 4th anniversary of the first commit of Owncast, aptly titled: “WIP”.&lt;/p&gt;
 &lt;h2 id=&quot;wip&quot; tabindex=&quot;-1&quot;&gt;WIP&lt;/h2&gt;
 &lt;p&gt;It was a bit before that when I actually started working on it in earnest, but not that far before. I remember duct taping a proof of concept together, opening my laptop&#39;s web port to the public internet, messaging somebody and asking “Could you open this URL in VLC or QuickTime or something?”. Since there was no web interface or player, I just wanted to see if video would play for somebody over the internet. When I was told it worked, I went from asking “I wonder if this is possible” to knowing it was possible.&lt;/p&gt;
 &lt;h2 id=&quot;what-specifically-was-happening-four-years-ago&quot; tabindex=&quot;-1&quot;&gt;What specifically was happening four years ago?&lt;/h2&gt;
