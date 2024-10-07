@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>Owncast&#39;s 4th Anniversary</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<script async type="module">import mermaid from"https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs"</script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" integrity="sha512-hpZ5pDCF2bRCweL5WoA0/N1elet1KYL5mx3LP555Eg/0ZguaHawxNvEjF6O3rufAChs16HVNhEc6blF/rZoowQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/autoloader/prism-autoloader.min.js" integrity="sha512-sv0slik/5O0JIPdLBCR2A3XDg/1U3WuDEheZfI/DI5n8Yqc3h5kjrnr46FGBNiUAJF7rE4LHKwQ/SoSLRKAxEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script async src="https://cdn.jsdelivr.net/npm/lucide@0.115.0/dist/umd/lucide.min.js"></script>
+<script>window.addEventListener("load",(()=>{document.querySelectorAll(".callout").forEach((e=>{const t=getComputedStyle(e).getPropertyValue("--callout-icon"),l=t&&t.trim().replace(/^lucide-/,"");if(l){const t=e.querySelector(".callout-title");if(t){const e=document.createElement("div"),c=document.createElement("i");e.appendChild(c),c.setAttribute("icon-name",l),e.setAttribute("class","callout-icon"),t.insertBefore(e,t.firstChild)}}})),lucide.createIcons(),Array.from(document.querySelectorAll(".callout.is-collapsible")).forEach((e=>{e.querySelector(".callout-title").addEventListener("click",(t=>{e.classList.contains("is-collapsed")?e.classList.remove("is-collapsed"):e.classList.add("is-collapsed")}))}))}))</script>
+<script async src="https://fastly.jsdelivr.net/npm/force-graph@1.43.0/dist/force-graph.min.js"></script>
+<script async src="https://fastly.jsdelivr.net/npm/@alpinejs/persist@3.11.1/dist/cdn.min.js"></script>
+<script src="https://fastly.jsdelivr.net/npm/alpinejs@3.11.1/dist/cdn.min.js" async></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism-okaidia.min.css" integrity="sha512-mIs9kKbaw6JZFfSuo+MovjU+Ntggfoj8RwAmJbVXQ5mkAX5LlgETQEweFPI18humSPHymTb5iikEOKWF7I8ncQ==" crossorigin="anonymous" referrerpolicy="no-referrer" async>
+<script src="https://fastly.jsdelivr.net/npm/whatwg-fetch@3.6.2/dist/fetch.umd.min.js" crossorigin="anonymous" referrerpolicy="no-referrer" async></script>
+<link href="/styles/digital-garden-base.css" rel="stylesheet">
+<link href="/styles/obsidian-base.css" rel="stylesheet">
+<link href="/styles/_theme.eae2f3b6.css" rel="stylesheet">
+<link href="/styles/custom-style.css" rel="stylesheet">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/manifest.webmanifest">
+<style></style>
+</head>
+<body class="theme-dark markdown-preview-view markdown-rendered markdown-preview-section">
+<nav class="navbar">
+<div class="navbar-inner">
+<a href="/" style="text-decoration:none">
+<h1 style="margin:15px!important">Digital Garden</h1>
+</a>
+</div>
+</nav>
+<main class="content cm-s-obsidian">
+<header>
+<div class="header-meta">
+</div>
+</header>
+<p>May 23rd, 2024 marks the 4th anniversary of the first commit of Owncast, aptly titled: “WIP”.</p>
+<h2 id="wip" tabindex="-1">WIP</h2>
+<p>It was a bit before that when I actually started working on it in earnest, but not that far before. I remember duct taping a proof of concept together, opening my laptop's web port to the public internet, messaging somebody and asking “Could you open this URL in VLC or QuickTime or something?”. Since there was no web interface or player, I just wanted to see if video would play for somebody over the internet. When I was told it worked, I went from asking “I wonder if this is possible” to knowing it was possible.</p>
+<h2 id="what-specifically-was-happening-four-years-ago" tabindex="-1">What specifically was happening four years ago?</h2>
+<p>For fun, I took a look at what the first month of Owncast commits looked like, and I don't remember things moving so fast. At that time, it already:</p>
+<ul>
+<li>Had native support for serving video via S3 compatible providers.</li>
+<li>There were two additional contributors apart from me.</li>
+<li>Chat had a fair bit of functionality.</li>
+<li>Video transcoding was completely customizable.</li>
+<li>It had persistent viewer statistics.</li>
+<li>Documentation existed, including a quickstart guide.</li>
+<li>A build script and Dockerfile allowed for relatively easy building.</li>
+<li>You could customize your page content with Markdown.</li>
+</ul>
+<p>Here are some other things that were going on at that time that never made it to where we are now:</p>
+<ul>
+<li>It had native support for serving video via IPFS.</li>
+<li>The web interface was built with Vue + Tailwind.</li>
+<li>Your chat username color was determined by a color hash of your username itself.</li>
+<li>Chat had user avatars.</li>
+<li>Chat showed embeds when links were shared, including images.</li>
+</ul>
+<h2 id="where-i-started-is-not-where-it-s-been" tabindex="-1">Where I started is not where it's been</h2>
+<p>It's remarkable how fast things move at first on any kind of project, and then as it starts to take shape it slows down and becomes a bit more methodical. Once the core functionality is built and it “works”, then you have to think about what's next. I suppose Owncast could have stopped right there. But I wanted it to be even easier to use, and more customizable. The more people who started using it, the more feedback I'd get, I started to get a picture of the long-term direction of the project and its features. And that direction is still what we're going from today. I wouldn't blame you if you thought I didn't listen to your suggestions, but I promise that's not true. The specific thing you request might not happen, but the spirit of what you're asking for heavily influences the trajectory of the project, and can turn into something that's useful for a wider user base.</p>
+<p>Four years ago, Owncast to me, was a free and open source, self-hosted live video server. And since people who live stream also often enjoy having chat, it would be useful to bundle in a little optional minimal chat side feature as well. But the focus was always the video. It's funny how much time and attention has gone into web interfaces (three entirely different implementations!) and chat over these years, when that has nothing to do with opening VLC and playing back a video stream. It's still a balancing act to this day, since some people care very, very much about chat, social features, the public directory, and interactivity. Others aren't concerned with those at all.</p>
+<h2 id="what-s-up" tabindex="-1">What's up?</h2>
+<p>It's never a good time, but I'm looking at the backend codebase that began four years ago. As with anything that was started very small, and you build on top of it long enough, there's a point where at least some changes need to be made. Primarily because some of the things that are on our roadmap simply aren't possible with how the backend is architected. So while it's a messy undertaking, I think it's a valuable one, and it's happening now, so the really cool stuff can continue to get built after that.</p>
+<h2 id="thank-you" tabindex="-1">Thank You</h2>
+<p>Thank you for the four-year journey. Your patience, your kindness, your contributions, your feedback, your encouragement, your donations, and for sharing your Owncast-powered live streams with me. Every so often I look at a screen full of those streams and I can't believe I had some small part in helping you build them. It continues to mean the world to me that you let me be involved.</p>
+<p>I'm still excited about Owncast every day. I can't say there hasn't been periods of burnout, and doubt. And if I didn't have an opportunity to see you out there using Owncast, maybe some of those periods would have been the end of it. But all of you keep it alive. At the end of the day, Owncast only exists because you use it. Everything else is an implementation detail.</p>
+<p>Here's to another four, five, ten years when Owncast will still be a “WIP”.</p>
+</main>
+<script>lucide.createIcons({attrs:{class:["svg-icon"]}})</script>
+</body>
+</html>
