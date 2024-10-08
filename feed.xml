@@ -3,14 +3,14 @@
     <title>Gabe&#39;s Digital Life</title>
     <link href="https://garden.gabekangas.com/feed.xml" rel="self" >
     <link href="https://garden.gabekangas.com" >
-    <updated>2024-10-08T00:13:58Z</updated>
+    <updated>2024-10-08T00:16:16Z</updated>
     <id>https://garden.gabekangas.com</id>
         <entry>
             <title>
                 Owncast-plans
                 
             </title>
-            <updated>2024-10-08T00:13:51Z</updated>
+            <updated>2024-10-08T00:16:07Z</updated>
             <id>https://garden.gabekangas.com/personal/blog-posts/owncast-plans/</id>
             <content type="html">
                 &lt;p&gt;While I try to keep a public roadmap, and keep a reasonable plan for Owncast I rarely have an opportunity to gush about features I’m looking forward to building. So I thought I’d write a quick blog post to share some of my personal thoughts about the my vision of Owncast from a high level.&lt;/p&gt;
@@ -35,7 +35,7 @@
                 Owncast&#39;s 4th Anniversary
                 
             </title>
-            <updated>2024-10-08T00:13:51Z</updated>
+            <updated>2024-10-08T00:16:07Z</updated>
             <id>https://garden.gabekangas.com/</id>
             <content type="html">
                 &lt;p&gt;May 23rd, 2024 marks the 4th anniversary of the first commit of Owncast, aptly titled: “WIP”.&lt;/p&gt;
@@ -73,5 +73,159 @@
 
             </content>
             <link href="https://garden.gabekangas.com/" >
+        </entry>
+        <entry>
+            <title>
+                Goodbye to Longtail Music
+                
+            </title>
+            <updated>2024-10-08T00:16:07Z</updated>
+            <id>https://garden.gabekangas.com/personal/blog-posts/goodbye-to-longtail-music/</id>
+            <content type="html">
+                &lt;p&gt;A few weeks ago I shut down Longtail Music and I wanted to spend some time thinking about it and writing my thoughts up on it along with talking about what I&#39;m going to focus on next.&lt;/p&gt;
+&lt;p&gt;It had a run longer than many projects that show up on the internet, but everything ends, so I wanted to give a bit of a postmortem to talk about what I sent out to do, what it did, and why I think things never worked out.&lt;/p&gt;
+&lt;p&gt;I originally built Longtail Music as a spinoff from my time with The Bat Player, an internet radio client for the TV.  I thought if The Bat Player was a client for people who already love internet radio and know what they want to listen to, then I want to build something on the web for people to discover internet radio for the first time and discover a station they would love.&lt;/p&gt;
+&lt;p&gt;While this is the polished marketing elevator pitch it encompasses a lot of things that need to go right in order to pull it off.  Too many things.  So let&#39;s talk about them.&lt;/p&gt;
+&lt;p&gt;As a refresher, here&#39;s what Longtail Music was.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;A discovery engine for people to find an internet radio station they would enjoy.&lt;/li&gt;
+&lt;li&gt;An internet radio client that displayed details about the artist including images and album information.  A smaller version of the player was also embeddable on external web sites.&lt;/li&gt;
+&lt;li&gt;A way to listen to previews and keep record of previously played tracks.&lt;/li&gt;
+&lt;li&gt;Provided links for each track so you can listen to it again on Spotify, Apple Music, YouTube, etc.&lt;/li&gt;
+&lt;li&gt;A crowd funding platform to allow stations to collect funds to help keep the station online.&lt;/li&gt;
+&lt;li&gt;A CMS for stations to post messages, update show schedules, announce special events, and contact fans.&lt;/li&gt;
+&lt;li&gt;A marketing interface for featuring the stations on social networks.&lt;/li&gt;
+&lt;li&gt;An analytics platform showing station owners the listening statistics and the most popular tracks.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;That&#39;s a lot of functionality.&lt;/p&gt;
+&lt;p&gt;If that&#39;s everything I had to build, then just as many things were somewhat out of my control.  In order to run successfully, a handful of things had to work out.&lt;/p&gt;
+&lt;h3 id=&quot;for-longtail-music-to-exist-in-any-way-the-following-needed-to-be-true&quot; tabindex=&quot;-1&quot;&gt;For Longtail Music to exist in any way the following needed to be true:&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;The stations have to be good.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;This is obvious, but it&#39;s also not a given.  There are so many internet radio stations out there, and very few of them are worthy of featuring in front of people.&lt;/p&gt;
+&lt;p&gt;Most internet radio stations fall into the category of &amp;quot;Variety and misc&amp;quot;.  An unappealing random grab bag of tracks.  It shows no personality, no target demographic, and no way for a potential listener to really dig in and know what is being offered.  Even the tag lines of these stations are all generic &amp;quot;From old to new, hard to soft, we have the best that music has to offer&amp;quot; or bragging about not sticking within a single genre.  So when I started Longtail Music I had the task ahead of me of trying to find stations that had a real personality and a clear goal.  A station that said things like &amp;quot;Promoting Soca and Calypso music to the world&amp;quot; was something that would catch my eye where &amp;quot;The best of 80s, 90s and today&amp;quot; would not.&lt;/p&gt;
+&lt;p&gt;Plus I&#39;ll be honest: I favored stations with fewer ads.  Ads are the worst.  Stations don&#39;t even make money off the ads, it just goes to whatever hosting company the server runs on.&lt;/p&gt;
+&lt;ol start=&quot;2&quot;&gt;
+&lt;li&gt;The stations had to realize I&#39;m just trying to help.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;I&#39;d email these stations individually.  And that is more difficult than it sounds as it would sometimes take a lot of digging to find out how to contact a station owner.  And if I got a response at all it would usually be along the lines of them assuming I&#39;m scamming them, looking to sell them something, or are out to get them in some way.  I emailed hundreds of station owners and most of the responses were things like &amp;quot;I&#39;ve been doing this for 15 years and I don&#39;t need you&amp;quot; or something equally negative.  Some stations even had concerns being listed next to another station on a web site because they thought they&#39;d &amp;quot;lose listeners&amp;quot; and saw other stations as &amp;quot;competition&amp;quot; and didn&#39;t want to take part.&lt;/p&gt;
+&lt;ol start=&quot;3&quot;&gt;
+&lt;li&gt;The stations had to be willing to minimally use the platform.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;For each station I onboarded I would manually and painstakingly find their logo, audio streams, descriptions and misc station info and input it into the Longtail platform so the station owners didn&#39;t have to do anything to start using it.  I would ask if they ever changed their audio stream to make sure they change it on the platform, update their logo if they ever change it and update their schedule so people who drop by know what shows and content they&#39;re featuring.  This didn&#39;t really happen.  Many stations would get a new audio stream, not tell me, and not update it on Longtail, making their station completely unavailable.  So if I notice this happening I&#39;d go digging for the new one, update it for them, and fix it.  This showed that the minimum effort of even making sure people can listen to their station was not being made by anyone other than me.&lt;/p&gt;
+&lt;p&gt;But in general without stations that were actually using the platform nothing else mattered.  And that leads me to the next item.&lt;/p&gt;
+&lt;ol start=&quot;4&quot;&gt;
+&lt;li&gt;The stations on the platform have to stay online.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Internet radio stations do not make money.  Each station owner operates at a loss and if they&#39;re lucky they&#39;ll have some donations to help each month.  But realistically the number of listeners most stations have can&#39;t make enough money even if everyone donated.  Because of this stations disappear, often.  There&#39;s only so much money people will spend on a hobby, and they just give up.  Out of pocket expenses, few listeners and increasing hassle with licensing leads to stations just being turned off.&lt;/p&gt;
+&lt;ol start=&quot;5&quot;&gt;
+&lt;li&gt;I needed to get potential listeners to the site and discover these stations.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Even if the stations were on board and engaged that&#39;s only half the equation.  My goal was to spend some highly targeted dollars on advertising for stations on the platform in order to acquire new listeners.  Find people who like rap and send them to the rap stations, get country people to the country stations.  It&#39;s a self-identifying demographic and as far as targeting goes this seemed straightforward.&lt;/p&gt;
+&lt;h3 id=&quot;what-i-wanted-to-provide-for-stations&quot; tabindex=&quot;-1&quot;&gt;What I wanted to provide for stations.&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Stay in business: I wanted to give stations money.  For free.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Since stations need money to stay online I wanted to help on that front.  A part of Longtail was having a place that encouraged listeners to support the station via donations.  Donations were featured on the station&#39;s page and listeners could keep track of how much they&#39;ve donated over time.  Much like Patreon, OpenCollective, or other crowdfunding platforms, I wanted to build a mutually beneficial ecosystem where it&#39;s super easy to donate to a station, and in turn the station gets to keep running and playing music for the listener.  I thought stations would really like this, since stations are asking for money &lt;em&gt;ALL OF THE TIME&lt;/em&gt;.  They ignored it completely.&lt;/p&gt;
+&lt;ol start=&quot;2&quot;&gt;
+&lt;li&gt;Get more listeners: I wanted to provide promotion of stations.  For free.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The whole point is to have people discover new music via internet radio stations, so acquiring users is important.  Plus In order to get donations you need listeners.  So you need to spend money to make money.  I wanted to spend marketing dollars, on behalf of the station, for free, to acquire them more users.  No catch, I just wanted more people to listen to their stations by routing them through Longtail Music.  But I wasn&#39;t willing to do this unless a handful of stations were at least minimally active on the platform.&lt;/p&gt;
+&lt;ol start=&quot;3&quot;&gt;
+&lt;li&gt;A modern and more interactive listening experience: I wanted to build something that the &amp;quot;Facebook Generation&amp;quot; felt at home with.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Most internet radio stations have web sites that look like they were built 15 years ago.  Some of them were.  If you want new listeners then not only do the first impressions matter, but you have to keep them coming back.  People are used to newsfeeds, social posts and continued engagement.  Some of my favorite internet radio stations have live DJ sets, and with a single click of a button on Longtail a station can notify fans of the station via email that a live set is about to begin and it features that station on the home page so everyone knows a special event is occurring.  Stations never used this this feature, even when it notified people and featured the station on their behalf.&lt;/p&gt;
+&lt;h3 id=&quot;what-i-wanted-to-provide-for-listeners&quot; tabindex=&quot;-1&quot;&gt;What I wanted to provide for listeners&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;A simple way to discover an internet radio station to enjoy.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;By clicking on genres you&#39;re into, or connecting your Facebook or Spotify accounts Longtail surfaced you a list of stations that were compatible with things you already listen to.  It was fast and easy to go from nothing to listening.&lt;/p&gt;
+&lt;ol start=&quot;2&quot;&gt;
+&lt;li&gt;The ability to share your thoughts about songs and the station.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;You could like and dislike songs, sharing with others what you thought about what was currently playing on the station.  You could also leave messages for other listeners and for the DJs.  These likes, dislikes and messages would then get emailed to station owners at the end of the week so they knew what people thought of the content on the station.&lt;/p&gt;
+&lt;ol start=&quot;3&quot;&gt;
+&lt;li&gt;Showing you weren&#39;t alone, you saw other people, in real-time, tune in and react to songs.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;As people tuned into the station, liked, disliked, or commented on songs, you would see it in real time.  This created a communial listening experience.  It wasn&#39;t just you listening by yourself, the world was listening with you.&lt;/p&gt;
+&lt;ol start=&quot;4&quot;&gt;
+&lt;li&gt;A listening history so you can go back to that song you really enjoyed, and find it on your streaming service of choice.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;You could look at your history to find that song you heard earlier, and quickly jump to it in Spotify or other services, to listen to it again or add it to your personal playlists.&lt;/p&gt;
+&lt;h3 id=&quot;what-went-wrong&quot; tabindex=&quot;-1&quot;&gt;What went wrong&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Not enough station engagement.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;This has been mentioned a couple times, but building something for somebody who doesn&#39;t want it isn&#39;t going to get you anywhere.  It&#39;s still unclear why this happened, however.  Do they just not want the help?  Do they not want to have to remember to use another web site every day?  Do they think things are &amp;quot;good enough as it is&amp;quot;?  Are they afraid of being listed next to other stations and think it&#39;s &amp;quot;competition&amp;quot;?&lt;/p&gt;
+&lt;ol start=&quot;2&quot;&gt;
+&lt;li&gt;Not enough listeners.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;This is pretty common with anything new, you just don&#39;t have users yet.  But for me I wasn&#39;t willing on putting a ton of money into user acquisition until I felt confident that the stations would engage with them once they got there, and this never happened.  And with the promotion that did happen, my guess is people think &amp;quot;Spotify is good enough&amp;quot; and really aren&#39;t looking for another way to discover new music, so they&#39;re not jumping to press play on some random web site.&lt;/p&gt;
+&lt;ol start=&quot;3&quot;&gt;
+&lt;li&gt;Zero stations asked for donations and zero users donated.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;By &amp;quot;asked for donations&amp;quot; I didn&#39;t mean they didn&#39;t enable the feature, as it was on by default, but stations weren&#39;t telling listeners to donate via Longtail, or making posts saying they were accepting donations.  Therefore users didn&#39;t donate.&lt;/p&gt;
+&lt;ol start=&quot;4&quot;&gt;
+&lt;li&gt;Onboarding each station was a chore.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;It took &lt;em&gt;way&lt;/em&gt; too much effort to find, communicate with, and convince each station to take part.  I felt like a sales person who wasn&#39;t making money.  I even used a sales pipeline tool to keep track of who I emailed and what the status of each conversation was.  It&#39;s possible I spent just as much time emailing as I did with the development of the product.&lt;/p&gt;
+&lt;p&gt;The only way I&#39;d do this differently is a fundamental change on how I think of the platform.  Add the station first without talking to them, and if they want to be involved later, then great, otherwise just leave it.  Maybe even just bulk import stations early on, regardless if they suck or not.  But I felt strongly about creating a relationship with each quality station, and that I was willing to put effort into it, even though it didn&#39;t pay off.&lt;/p&gt;
+&lt;ol start=&quot;5&quot;&gt;
+&lt;li&gt;Aside from a cut of donations, there&#39;s no way to make money.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Simple as that.  But I wasn&#39;t trying to make money or build a business.  I just wanted people to hear some cool songs.  But down the road it would matter, since it always does.&lt;/p&gt;
+&lt;h3 id=&quot;what-worked&quot; tabindex=&quot;-1&quot;&gt;What worked&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;The idea was sound.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;A few stations were active on Longtail Music, and seeing them post their schedule, send weekly updates to listeners, and keep their information active really showed me that the idea of the platform, when executed, was a really good one.&lt;/p&gt;
+&lt;ol start=&quot;2&quot;&gt;
+&lt;li&gt;Putting a fresh coat of paint on internet radio does make internet radio more accessible.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Making people who feel at home on Facebook feel comfortable tuning into internet radio does modernize something that hasn&#39;t changed a lot for years.&lt;/p&gt;
+&lt;ol start=&quot;3&quot;&gt;
+&lt;li&gt;I hired a designer and the end product came off pretty nice.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;I made the choice upfront to have somebody design the site for me, and that was a good idea, though it slowed me down to have somebody else involved.  And while I had never built in React before, I built a pretty complex, multifaceted social platform with billing features.  It would have been easier if I built an iOS app or something, since that&#39;s my focus, the React app ran great for years.  I focused on performance, speed, and ease of use, and it worked.&lt;/p&gt;
+&lt;h3 id=&quot;what-i-learned&quot; tabindex=&quot;-1&quot;&gt;What I learned&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Some people don&#39;t want your help &amp;amp; you can&#39;t make people care.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Even if you&#39;re just trying to do something helpful, for free, that doesn&#39;t mean that people want what you have.  A lot of these station owners have been doing it for many years and don&#39;t want anybody else involved.  Even if they need money, even if they want more listeners, even if their web page is crap.  It&#39;s their thing and they don&#39;t want you or anybody else involved.&lt;/p&gt;
+&lt;p&gt;I wanted to forge partnerships with people who care deeply about music, internet radio and sharing the worlds of both.  But making partnerships is hard, and you can&#39;t force somebody to care as much as you about your thing.  I cared about their stations, and I wanted to see them all thrive, but nobody cared that I cared.&lt;/p&gt;
+&lt;ol start=&quot;2&quot;&gt;
+&lt;li&gt;Being a platform for other people&#39;s content is a difficult road.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Sometimes I think it would have been easier to create 100 of my own internet radio stations from scratch, operate them, and then use those stations on Longtail Music.  But I wanted to be a part of something bigger, and help people who really love music.  But anytime you&#39;re trying to surface the work and content of others you&#39;re at the mercy of other people.  Luckily I didn&#39;t have to pay to have this content on Longtail (unlike running a music streaming service like Rdio or a TV streaming service), so it didn&#39;t become a financial burden, but it&#39;s still a challenge when you don&#39;t control everything.  You rely on the people generating that content to be involved.&lt;/p&gt;
+&lt;ol start=&quot;3&quot;&gt;
+&lt;li&gt;Building a product for the worst case scenario buys you time and lowers expectations.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;I built Longtail Music knowing on day one there would be zero people and very little action on the platform.  So I made sure that every little thing gets surfaced in a stream and keeps the content fresh.  It was constantly showing the recent songs played by each station, and as each person tuned into a station it would show off that the station got a new listener.  Even at its most quiet the site had a feed of content that was always fresh, interesting and showed you what has been going on while you were away.  You could even discover new music just by browsing the home page and seeing stations that you might be interested in or cover art that catches you attention.  There were previews of recent songs, definitions of genres you might not be familiar with, and a way to discover stations via your Facebook and Spotify accounts.  I didn&#39;t build it to look good after hundreds of people started using it, I built it to attract somebody when nothing was going on and didn&#39;t require activity, and that was a good call.&lt;/p&gt;
+&lt;p&gt;In a similar vein, even though I talk about the lack of engagement by stations, I built Longtail Music to require as little usage by station owners as possible.  The platform would feature a station when it plays a song for the first time and keep a record of artists that are often played on the station so station owners don&#39;t have to do anything for it to be obvious what type of content they&#39;re playing.  It allowed the page for a station to always be up to date and featuring things without any human being involved.&lt;/p&gt;
+&lt;ol start=&quot;4&quot;&gt;
+&lt;li&gt;Don&#39;t waste time building a user accounts system unless you need to.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Unless the value of the product relies on accounts to exist, it&#39;s a waste of time.  Longtail Music had user accounts where you could view your listening history, donation history, mark songs as favorites, like/dislike, etc.  None of this was necessary.  You could do most everything without a user account (on purpose), so I shouldn&#39;t have spent time building them in the first place.  That&#39;s not where the value of the product was.  It would have been a nice v2 addition if there were enough listeners and stations were active enough where they were generating content that should be pushed to individual users.&lt;/p&gt;
+&lt;ol start=&quot;5&quot;&gt;
+&lt;li&gt;In general the scope of the product was too big.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;I built it all, and it had everything I wanted, so it&#39;s not like the large scope had any real downsides other than it took longer to build.  But, like the user accounts, I probably shouldn&#39;t have started with the donations platform or any of the special features for station owners.  All of the dashboards and special station-owner features were probably never even looked at.  While seeing graphs about who&#39;s tuning in and when and what songs are popular are very cool, it&#39;s not terribly useful early on, and really not useful if the station owner isn&#39;t even logging in.&lt;/p&gt;
+&lt;ol start=&quot;6&quot;&gt;
+&lt;li&gt;Don&#39;t spend time on all the dumb &amp;quot;social stuff&amp;quot;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;I spent a lot of time working on integration with Twitter and Facebook.  Both from the automated posting standpoint, and using Facebook and Spotify data to match you up with stations via your social listening history.  I also spent a bunch of time on server-rendered pages for every part of the site so OpenGraph tags would render for anybody who linked to it.  None of this was required or helpful.&lt;/p&gt;
+&lt;ol start=&quot;7&quot;&gt;
+&lt;li&gt;All the real-time interactive user stuff wasn&#39;t very useful with so few users.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;While it was super cool to see, in real-time, users around you react to songs and tune into stations, it wasn&#39;t very useful, and it took a lot of work to build.&lt;/p&gt;
+&lt;h3 id=&quot;what-s-next&quot; tabindex=&quot;-1&quot;&gt;What&#39;s next?&lt;/h3&gt;
+&lt;p&gt;Nothing new, actually.  I&#39;m currently working on an update for The Bat Player for AppleTV and I look forward to getting that out in 2020.  It&#39;s been a long time since I&#39;ve worked on it, and it needs some updates.&lt;/p&gt;
+&lt;p&gt;Unlike social web sites where you require some critical mass before you can call yourself a success, a useful application is a success for each person who installs it and uses it.&lt;/p&gt;
+&lt;p&gt;So I&#39;m going &amp;quot;back to my roots&amp;quot;, if you will, and making sure the client for existing internet radio lovers is in good shape.&lt;/p&gt;
+&lt;p&gt;As far as the future, I haven&#39;t given up on the idea of introducing more people to internet radio and making it more accessible and modern.  I just don&#39;t know how to do it.  I&#39;ll keep thinking.  In the mean time I&#39;ll put on some good tunes and listen to internet radio somewhere else.&lt;/p&gt;
+
+            </content>
+            <link href="https://garden.gabekangas.com/personal/blog-posts/goodbye-to-longtail-music/" >
         </entry>
 </feed>

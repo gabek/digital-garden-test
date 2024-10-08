@@ -1,0 +1,345 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>Goodbye to Longtail Music</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<script async type="module">import mermaid from"https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs"</script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" integrity="sha512-hpZ5pDCF2bRCweL5WoA0/N1elet1KYL5mx3LP555Eg/0ZguaHawxNvEjF6O3rufAChs16HVNhEc6blF/rZoowQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/autoloader/prism-autoloader.min.js" integrity="sha512-sv0slik/5O0JIPdLBCR2A3XDg/1U3WuDEheZfI/DI5n8Yqc3h5kjrnr46FGBNiUAJF7rE4LHKwQ/SoSLRKAxEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script async src="https://cdn.jsdelivr.net/npm/lucide@0.115.0/dist/umd/lucide.min.js"></script>
+<script>window.addEventListener("load",(()=>{document.querySelectorAll(".callout").forEach((e=>{const t=getComputedStyle(e).getPropertyValue("--callout-icon"),l=t&&t.trim().replace(/^lucide-/,"");if(l){const t=e.querySelector(".callout-title");if(t){const e=document.createElement("div"),c=document.createElement("i");e.appendChild(c),c.setAttribute("icon-name",l),e.setAttribute("class","callout-icon"),t.insertBefore(e,t.firstChild)}}})),lucide.createIcons(),Array.from(document.querySelectorAll(".callout.is-collapsible")).forEach((e=>{e.querySelector(".callout-title").addEventListener("click",(t=>{e.classList.contains("is-collapsed")?e.classList.remove("is-collapsed"):e.classList.add("is-collapsed")}))}))}))</script>
+<script async src="https://fastly.jsdelivr.net/npm/force-graph@1.43.0/dist/force-graph.min.js"></script>
+<script async src="https://fastly.jsdelivr.net/npm/@alpinejs/persist@3.11.1/dist/cdn.min.js"></script>
+<script src="https://fastly.jsdelivr.net/npm/alpinejs@3.11.1/dist/cdn.min.js" async></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism-okaidia.min.css" integrity="sha512-mIs9kKbaw6JZFfSuo+MovjU+Ntggfoj8RwAmJbVXQ5mkAX5LlgETQEweFPI18humSPHymTb5iikEOKWF7I8ncQ==" crossorigin="anonymous" referrerpolicy="no-referrer" async>
+<script src="https://fastly.jsdelivr.net/npm/whatwg-fetch@3.6.2/dist/fetch.umd.min.js" crossorigin="anonymous" referrerpolicy="no-referrer" async></script>
+<link href="/styles/digital-garden-base.css" rel="stylesheet">
+<link href="/styles/obsidian-base.css" rel="stylesheet">
+<link href="/styles/_theme.2b152a77.css" rel="stylesheet">
+<link href="/styles/custom-style.css" rel="stylesheet">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/manifest.webmanifest">
+<style></style>
+</head>
+<body class="theme-dark markdown-preview-view markdown-rendered markdown-preview-section filetree-note-icon links-note-icon backlinks-note-icon">
+<div x-init="isDesktop = (window.innerWidth>=1400) ? true: false;" x-on:resize.window="isDesktop = (window.innerWidth>=1400) ? true : false;" x-data="{isDesktop: true, showFilesMobile: false}">
+<div x-show.important="!isDesktop" style="display:none">
+<nav class="navbar">
+<div class="navbar-inner">
+<span style="font-size:1.5rem;margin-right:10px" @click="showFilesMobile=!showFilesMobile"><i icon-name="menu"></i></span>
+<a href="/" style="text-decoration:none">
+<h1 style="margin:15px!important">Gabe&#39;s Digital Life</h1>
+</a>
+</div>
+<div class="search-button align-icon" onclick="toggleSearch()">
+<span class="search-icon">
+<i icon-name="search"></i>
+</span>
+<span class="search-text">
+<span>Search</span>
+<span style="font-size:.6rem;padding:2px 2px 0 6px;text-align:center;transform:translateY(4px)" class="search-keys">
+CTRL + K
+</span>
+</span>
+</div>
+</nav>
+</div>
+<div x-show="showFilesMobile && !isDesktop" @click="showFilesMobile = false" style="display:none" class="fullpage-overlay"></div>
+<nav class="filetree-sidebar" x-show.important="isDesktop || showFilesMobile" style="display:none">
+<a href="/" style="text-decoration:none">
+<h1 style="text-align:center">Gabe&#39;s Digital Life</h1>
+</a>
+<div style="display:flex;justify-content:center">
+<div class="search-button align-icon" onclick="toggleSearch()">
+<span class="search-icon">
+<i icon-name="search"></i>
+</span>
+<span class="search-text">
+<span>Search</span>
+<span style="font-size:.6rem;padding:2px 2px 0 6px;text-align:center;transform:translateY(4px)" class="search-keys">
+CTRL + K
+</span>
+</span>
+</div>
+</div>
+<div class="folder" x-data="{isOpen: true}">
+<div x-show="isOpen" style="display:none" class="">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('Personal')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">Personal</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('Personal/Blog Posts')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">Blog Posts</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink active-note"><a data-note-icon="" style="text-decoration:none" class="filename" href="/personal/blog-posts/goodbye-to-longtail-music/">Goodbye to Longtail Music </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/">Owncast&#39;s 4th Anniversary </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/personal/blog-posts/owncast-plans/">Owncast-plans </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</nav>
+</div>
+<div class="search-container" id="globalsearch" onclick="toggleSearch()">
+<div class="search-box">
+<input type="search" id="term" placeholder="Start typing...">
+<div id="search-results"></div>
+<footer class="search-box-footer">
+<div class="navigation-hint">
+<span>Enter to select</span>
+</div>
+<div class="navigation-hint align-icon">
+<i icon-name="arrow-up" aria-hidden="true"></i>
+<i icon-name="arrow-down" aria-hidden="true"></i>
+<span>to navigate</span>
+</div>
+<div class="navigation-hint">
+<span>ESC to close</span>
+</div>
+</footer>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/flexsearch@0.7.21/dist/flexsearch.bundle.js"></script>
+<script>document.addEventListener("DOMContentLoaded",init,!1),document.addEventListener("DOMContentLoaded",setCorrectShortcut,!1),window.toggleSearch=function(){document.getElementById("globalsearch").classList.contains("active")?document.getElementById("globalsearch").classList.remove("active"):(document.getElementById("globalsearch").classList.add("active"),document.getElementById("term").focus())},window.toggleTagSearch=function(e){console.log(e.textContent);const t=e.textContent;t&&(window.document.getElementById("term").value=t.trim(),window.toggleSearch(),window.search())};const loadingSvg='\n    <svg width="100" height="100" viewBox="0 0 45 45" xmlns="http://www.w3.org/2000/svg" stroke="#fff">\n      <g fill="none" fill-rule="evenodd" transform="translate(1 1)" stroke-width="2">\n          <circle cx="22" cy="22" r="6" stroke-opacity="0">\n              <animate attributeName="r"\n                   begin="1.5s" dur="3s"\n                   values="6;22"\n                   calcMode="linear"\n                   repeatCount="indefinite" />\n              <animate attributeName="stroke-opacity"\n                   begin="1.5s" dur="3s"\n                   values="1;0" calcMode="linear"\n                   repeatCount="indefinite" />\n              <animate attributeName="stroke-width"\n                   begin="1.5s" dur="3s"\n                   values="2;0" calcMode="linear"\n                   repeatCount="indefinite" />\n          </circle>\n          <circle cx="22" cy="22" r="6" stroke-opacity="0">\n              <animate attributeName="r"\n                   begin="3s" dur="3s"\n                   values="6;22"\n                   calcMode="linear"\n                   repeatCount="indefinite" />\n              <animate attributeName="stroke-opacity"\n                   begin="3s" dur="3s"\n                   values="1;0" calcMode="linear"\n                   repeatCount="indefinite" />\n              <animate attributeName="stroke-width"\n                   begin="3s" dur="3s"\n                   values="2;0" calcMode="linear"\n                   repeatCount="indefinite" />\n          </circle>\n          <circle cx="22" cy="22" r="8">\n              <animate attributeName="r"\n                   begin="0s" dur="1.5s"\n                   values="6;1;2;3;4;5;6"\n                   calcMode="linear"\n                   repeatCount="indefinite" />\n          </circle>\n      </g>\n  </svg>';function debounce(e,t,n){var a;return function(){var r=this,i=arguments,c=n&&!a;clearTimeout(a),a=setTimeout((function(){a=null,n||e.apply(r,i)}),t),c&&e.apply(r,i)}}function setCorrectShortcut(){navigator.platform.toUpperCase().indexOf("MAC")>=0&&document.querySelectorAll(".search-keys").forEach((e=>e.innerHTML="⌘ + K"))}function createIndex(e){const t=e=>e.toLowerCase().split(/([^a-z]|[^\x00-\x7F])/),n=new FlexSearch.Document({cache:!0,charset:"latin:extra",optimize:!0,index:[{field:"content",tokenize:"reverse",encode:t},{field:"title",tokenize:"forward",encode:t},{field:"tags",tokenize:"forward",encode:t}]});return e.forEach(((e,t)=>{n.add({id:t,title:e.title,content:e.content,tags:e.tags})})),n}async function init(){let e=!0;if(localStorage.getItem("searchIndex")){let{date:t,docs:n}=JSON.parse(localStorage.getItem("searchIndex"));if("2024-10-08T00:16:16.696Z"===t){e=!1;let t=createIndex(n);window.docs=n,window.index=t}}if(e){let e=await(await fetch("/searchIndex.json?v=2024-10-08T00:16:16.696Z")).json(),t=createIndex(e);localStorage.setItem("searchIndex",JSON.stringify({date:"2024-10-08T00:16:16.696Z",docs:e})),window.docs=e,window.index=t}document.addEventListener("keydown",(e=>{if((e.ctrlKey||e.metaKey)&&"k"===e.key&&(e.preventDefault(),toggleSearch()),"Escape"===e.key&&document.getElementById("globalsearch").classList.remove("active"),document.getElementById("globalsearch").classList.contains("active")){if("ArrowDown"===e.key){e.preventDefault();let t=document.querySelector(".searchresult.active");t?(t.classList.remove("active"),t.nextElementSibling?t.nextElementSibling.classList.add("active"):document.querySelector(".searchresult").classList.add("active")):document.querySelector(".searchresult").classList.add("active");let n=document.querySelector(".searchresult.active");n&&n.scrollIntoView({behavior:"smooth",block:"nearest",inline:"start"})}if("ArrowUp"===e.key){e.preventDefault();let t=document.querySelector(".searchresult.active");t?(t.classList.remove("active"),t.previousElementSibling?t.previousElementSibling.classList.add("active"):document.querySelectorAll(".searchresult").forEach((e=>{e.nextElementSibling||e.classList.add("active")}))):document.querySelectorAll(".searchresult").forEach((e=>{e.nextElementSibling&&e.classList.add("active")}));let n=document.querySelector(".searchresult.active");n&&n.scrollIntoView({behavior:"smooth",block:"nearest",inline:"start"})}if("Enter"===e.key){e.preventDefault();let t=document.querySelector(".searchresult.active");t&&(window.location.href=t.querySelector("a").href)}}}));const t=debounce(search,200,!1);field=document.querySelector("#term"),field.addEventListener("keydown",(e=>{"ArrowDown"!==e.key&&"ArrowUp"!==e.key&&t()})),resultsDiv=document.querySelector("#search-results");const n=new URL(location.href).searchParams;n.get("q")&&(field.setAttribute("value",n.get("q")),toggleSearch(),search())}async function search(){let e=field.value.trim();if(!e)return;if(e==lastSearch)return;console.log(`search for ${e}`),window.lastSearch=e,resultsDiv.innerHTML=loadingSvg;let t=offlineSearch(e),n="";if(!t.length){let t=document.createElement("p");return t.innerText=`No results for "${e}"`,resultsDiv.innerHTML="",void resultsDiv.appendChild(t)}n+='<div style="max-width:100%;">',t.forEach((e=>{e.tags&&e.tags.length>0?n+=`<div class="searchresult">\n                    <a class="search-link" href="${e.url}">${e.title}</a>\n                    <div onclick="window.location='${e.url}'">\n                        <div class="header-meta">\n                            <div class="header-tags">\n                                ${e.tags.map((e=>'<a class="tag" href="JavaScript:Void(0);">#'+e+"</a>")).join("")}\n                            </div>\n                        </div>\n                        ${e.content}\n                    </div>\n                </div>`:n+=`<div class="searchresult">\n                    <a class="search-link" href="${e.url}">${e.title}</a>\n                    <div onclick="window.location='${e.url}'">\n                        ${e.content}\n                    </div>\n                </div>`})),n+="</div>",resultsDiv.innerHTML=n}function truncate(e,t){return(e=e.replaceAll(/<[^>]*>/g,"")).length<t?e:e.substring(0,t-3)+"..."}function offlineSearch(e){let t=window.docs,n="#"===e[0]&&e.length>1?index.search(e.substring(1),[{field:"tags"}]):index.search(e,[{field:"title",limit:5},{field:"content",weight:10}]);const a=e=>{const t=n.filter((t=>t.field===e));return 0===t.length?[]:[...t[0].result]};return[...new Set([...a("title"),...a("content"),...a("tags")])].map((e=>{let n=t[e];return n.content=truncate(n.content,400),n.tags=n.tags.filter((e=>"gardenEntry"!=e&&"note"!=e)),n}))}window.lastSearch=""</script>
+<main class="content cm-s-obsidian">
+<header>
+<h1 data-note-icon="">Goodbye to Longtail Music</h1>
+<div class="header-meta">
+<div class="header-tags">
+</div>
+</div>
+</header>
+<p>A few weeks ago I shut down Longtail Music and I wanted to spend some time thinking about it and writing my thoughts up on it along with talking about what I'm going to focus on next.</p>
+<p>It had a run longer than many projects that show up on the internet, but everything ends, so I wanted to give a bit of a postmortem to talk about what I sent out to do, what it did, and why I think things never worked out.</p>
+<p>I originally built Longtail Music as a spinoff from my time with The Bat Player, an internet radio client for the TV. I thought if The Bat Player was a client for people who already love internet radio and know what they want to listen to, then I want to build something on the web for people to discover internet radio for the first time and discover a station they would love.</p>
+<p>While this is the polished marketing elevator pitch it encompasses a lot of things that need to go right in order to pull it off. Too many things. So let's talk about them.</p>
+<p>As a refresher, here's what Longtail Music was.</p>
+<ol>
+<li>A discovery engine for people to find an internet radio station they would enjoy.</li>
+<li>An internet radio client that displayed details about the artist including images and album information. A smaller version of the player was also embeddable on external web sites.</li>
+<li>A way to listen to previews and keep record of previously played tracks.</li>
+<li>Provided links for each track so you can listen to it again on Spotify, Apple Music, YouTube, etc.</li>
+<li>A crowd funding platform to allow stations to collect funds to help keep the station online.</li>
+<li>A CMS for stations to post messages, update show schedules, announce special events, and contact fans.</li>
+<li>A marketing interface for featuring the stations on social networks.</li>
+<li>An analytics platform showing station owners the listening statistics and the most popular tracks.</li>
+</ol>
+<p>That's a lot of functionality.</p>
+<p>If that's everything I had to build, then just as many things were somewhat out of my control. In order to run successfully, a handful of things had to work out.</p>
+<h3 id="for-longtail-music-to-exist-in-any-way-the-following-needed-to-be-true" tabindex="-1">For Longtail Music to exist in any way the following needed to be true:</h3>
+<ol>
+<li>The stations have to be good.</li>
+</ol>
+<p>This is obvious, but it's also not a given. There are so many internet radio stations out there, and very few of them are worthy of featuring in front of people.</p>
+<p>Most internet radio stations fall into the category of &quot;Variety and misc&quot;. An unappealing random grab bag of tracks. It shows no personality, no target demographic, and no way for a potential listener to really dig in and know what is being offered. Even the tag lines of these stations are all generic &quot;From old to new, hard to soft, we have the best that music has to offer&quot; or bragging about not sticking within a single genre. So when I started Longtail Music I had the task ahead of me of trying to find stations that had a real personality and a clear goal. A station that said things like &quot;Promoting Soca and Calypso music to the world&quot; was something that would catch my eye where &quot;The best of 80s, 90s and today&quot; would not.</p>
+<p>Plus I'll be honest: I favored stations with fewer ads. Ads are the worst. Stations don't even make money off the ads, it just goes to whatever hosting company the server runs on.</p>
+<ol start="2">
+<li>The stations had to realize I'm just trying to help.</li>
+</ol>
+<p>I'd email these stations individually. And that is more difficult than it sounds as it would sometimes take a lot of digging to find out how to contact a station owner. And if I got a response at all it would usually be along the lines of them assuming I'm scamming them, looking to sell them something, or are out to get them in some way. I emailed hundreds of station owners and most of the responses were things like &quot;I've been doing this for 15 years and I don't need you&quot; or something equally negative. Some stations even had concerns being listed next to another station on a web site because they thought they'd &quot;lose listeners&quot; and saw other stations as &quot;competition&quot; and didn't want to take part.</p>
+<ol start="3">
+<li>The stations had to be willing to minimally use the platform.</li>
+</ol>
+<p>For each station I onboarded I would manually and painstakingly find their logo, audio streams, descriptions and misc station info and input it into the Longtail platform so the station owners didn't have to do anything to start using it. I would ask if they ever changed their audio stream to make sure they change it on the platform, update their logo if they ever change it and update their schedule so people who drop by know what shows and content they're featuring. This didn't really happen. Many stations would get a new audio stream, not tell me, and not update it on Longtail, making their station completely unavailable. So if I notice this happening I'd go digging for the new one, update it for them, and fix it. This showed that the minimum effort of even making sure people can listen to their station was not being made by anyone other than me.</p>
+<p>But in general without stations that were actually using the platform nothing else mattered. And that leads me to the next item.</p>
+<ol start="4">
+<li>The stations on the platform have to stay online.</li>
+</ol>
+<p>Internet radio stations do not make money. Each station owner operates at a loss and if they're lucky they'll have some donations to help each month. But realistically the number of listeners most stations have can't make enough money even if everyone donated. Because of this stations disappear, often. There's only so much money people will spend on a hobby, and they just give up. Out of pocket expenses, few listeners and increasing hassle with licensing leads to stations just being turned off.</p>
+<ol start="5">
+<li>I needed to get potential listeners to the site and discover these stations.</li>
+</ol>
+<p>Even if the stations were on board and engaged that's only half the equation. My goal was to spend some highly targeted dollars on advertising for stations on the platform in order to acquire new listeners. Find people who like rap and send them to the rap stations, get country people to the country stations. It's a self-identifying demographic and as far as targeting goes this seemed straightforward.</p>
+<h3 id="what-i-wanted-to-provide-for-stations" tabindex="-1">What I wanted to provide for stations.</h3>
+<ol>
+<li>Stay in business: I wanted to give stations money. For free.</li>
+</ol>
+<p>Since stations need money to stay online I wanted to help on that front. A part of Longtail was having a place that encouraged listeners to support the station via donations. Donations were featured on the station's page and listeners could keep track of how much they've donated over time. Much like Patreon, OpenCollective, or other crowdfunding platforms, I wanted to build a mutually beneficial ecosystem where it's super easy to donate to a station, and in turn the station gets to keep running and playing music for the listener. I thought stations would really like this, since stations are asking for money <em>ALL OF THE TIME</em>. They ignored it completely.</p>
+<ol start="2">
+<li>Get more listeners: I wanted to provide promotion of stations. For free.</li>
+</ol>
+<p>The whole point is to have people discover new music via internet radio stations, so acquiring users is important. Plus In order to get donations you need listeners. So you need to spend money to make money. I wanted to spend marketing dollars, on behalf of the station, for free, to acquire them more users. No catch, I just wanted more people to listen to their stations by routing them through Longtail Music. But I wasn't willing to do this unless a handful of stations were at least minimally active on the platform.</p>
+<ol start="3">
+<li>A modern and more interactive listening experience: I wanted to build something that the &quot;Facebook Generation&quot; felt at home with.</li>
+</ol>
+<p>Most internet radio stations have web sites that look like they were built 15 years ago. Some of them were. If you want new listeners then not only do the first impressions matter, but you have to keep them coming back. People are used to newsfeeds, social posts and continued engagement. Some of my favorite internet radio stations have live DJ sets, and with a single click of a button on Longtail a station can notify fans of the station via email that a live set is about to begin and it features that station on the home page so everyone knows a special event is occurring. Stations never used this this feature, even when it notified people and featured the station on their behalf.</p>
+<h3 id="what-i-wanted-to-provide-for-listeners" tabindex="-1">What I wanted to provide for listeners</h3>
+<ol>
+<li>A simple way to discover an internet radio station to enjoy.</li>
+</ol>
+<p>By clicking on genres you're into, or connecting your Facebook or Spotify accounts Longtail surfaced you a list of stations that were compatible with things you already listen to. It was fast and easy to go from nothing to listening.</p>
+<ol start="2">
+<li>The ability to share your thoughts about songs and the station.</li>
+</ol>
+<p>You could like and dislike songs, sharing with others what you thought about what was currently playing on the station. You could also leave messages for other listeners and for the DJs. These likes, dislikes and messages would then get emailed to station owners at the end of the week so they knew what people thought of the content on the station.</p>
+<ol start="3">
+<li>Showing you weren't alone, you saw other people, in real-time, tune in and react to songs.</li>
+</ol>
+<p>As people tuned into the station, liked, disliked, or commented on songs, you would see it in real time. This created a communial listening experience. It wasn't just you listening by yourself, the world was listening with you.</p>
+<ol start="4">
+<li>A listening history so you can go back to that song you really enjoyed, and find it on your streaming service of choice.</li>
+</ol>
+<p>You could look at your history to find that song you heard earlier, and quickly jump to it in Spotify or other services, to listen to it again or add it to your personal playlists.</p>
+<h3 id="what-went-wrong" tabindex="-1">What went wrong</h3>
+<ol>
+<li>Not enough station engagement.</li>
+</ol>
+<p>This has been mentioned a couple times, but building something for somebody who doesn't want it isn't going to get you anywhere. It's still unclear why this happened, however. Do they just not want the help? Do they not want to have to remember to use another web site every day? Do they think things are &quot;good enough as it is&quot;? Are they afraid of being listed next to other stations and think it's &quot;competition&quot;?</p>
+<ol start="2">
+<li>Not enough listeners.</li>
+</ol>
+<p>This is pretty common with anything new, you just don't have users yet. But for me I wasn't willing on putting a ton of money into user acquisition until I felt confident that the stations would engage with them once they got there, and this never happened. And with the promotion that did happen, my guess is people think &quot;Spotify is good enough&quot; and really aren't looking for another way to discover new music, so they're not jumping to press play on some random web site.</p>
+<ol start="3">
+<li>Zero stations asked for donations and zero users donated.</li>
+</ol>
+<p>By &quot;asked for donations&quot; I didn't mean they didn't enable the feature, as it was on by default, but stations weren't telling listeners to donate via Longtail, or making posts saying they were accepting donations. Therefore users didn't donate.</p>
+<ol start="4">
+<li>Onboarding each station was a chore.</li>
+</ol>
+<p>It took <em>way</em> too much effort to find, communicate with, and convince each station to take part. I felt like a sales person who wasn't making money. I even used a sales pipeline tool to keep track of who I emailed and what the status of each conversation was. It's possible I spent just as much time emailing as I did with the development of the product.</p>
+<p>The only way I'd do this differently is a fundamental change on how I think of the platform. Add the station first without talking to them, and if they want to be involved later, then great, otherwise just leave it. Maybe even just bulk import stations early on, regardless if they suck or not. But I felt strongly about creating a relationship with each quality station, and that I was willing to put effort into it, even though it didn't pay off.</p>
+<ol start="5">
+<li>Aside from a cut of donations, there's no way to make money.</li>
+</ol>
+<p>Simple as that. But I wasn't trying to make money or build a business. I just wanted people to hear some cool songs. But down the road it would matter, since it always does.</p>
+<h3 id="what-worked" tabindex="-1">What worked</h3>
+<ol>
+<li>The idea was sound.</li>
+</ol>
+<p>A few stations were active on Longtail Music, and seeing them post their schedule, send weekly updates to listeners, and keep their information active really showed me that the idea of the platform, when executed, was a really good one.</p>
+<ol start="2">
+<li>Putting a fresh coat of paint on internet radio does make internet radio more accessible.</li>
+</ol>
+<p>Making people who feel at home on Facebook feel comfortable tuning into internet radio does modernize something that hasn't changed a lot for years.</p>
+<ol start="3">
+<li>I hired a designer and the end product came off pretty nice.</li>
+</ol>
+<p>I made the choice upfront to have somebody design the site for me, and that was a good idea, though it slowed me down to have somebody else involved. And while I had never built in React before, I built a pretty complex, multifaceted social platform with billing features. It would have been easier if I built an iOS app or something, since that's my focus, the React app ran great for years. I focused on performance, speed, and ease of use, and it worked.</p>
+<h3 id="what-i-learned" tabindex="-1">What I learned</h3>
+<ol>
+<li>Some people don't want your help &amp; you can't make people care.</li>
+</ol>
+<p>Even if you're just trying to do something helpful, for free, that doesn't mean that people want what you have. A lot of these station owners have been doing it for many years and don't want anybody else involved. Even if they need money, even if they want more listeners, even if their web page is crap. It's their thing and they don't want you or anybody else involved.</p>
+<p>I wanted to forge partnerships with people who care deeply about music, internet radio and sharing the worlds of both. But making partnerships is hard, and you can't force somebody to care as much as you about your thing. I cared about their stations, and I wanted to see them all thrive, but nobody cared that I cared.</p>
+<ol start="2">
+<li>Being a platform for other people's content is a difficult road.</li>
+</ol>
+<p>Sometimes I think it would have been easier to create 100 of my own internet radio stations from scratch, operate them, and then use those stations on Longtail Music. But I wanted to be a part of something bigger, and help people who really love music. But anytime you're trying to surface the work and content of others you're at the mercy of other people. Luckily I didn't have to pay to have this content on Longtail (unlike running a music streaming service like Rdio or a TV streaming service), so it didn't become a financial burden, but it's still a challenge when you don't control everything. You rely on the people generating that content to be involved.</p>
+<ol start="3">
+<li>Building a product for the worst case scenario buys you time and lowers expectations.</li>
+</ol>
+<p>I built Longtail Music knowing on day one there would be zero people and very little action on the platform. So I made sure that every little thing gets surfaced in a stream and keeps the content fresh. It was constantly showing the recent songs played by each station, and as each person tuned into a station it would show off that the station got a new listener. Even at its most quiet the site had a feed of content that was always fresh, interesting and showed you what has been going on while you were away. You could even discover new music just by browsing the home page and seeing stations that you might be interested in or cover art that catches you attention. There were previews of recent songs, definitions of genres you might not be familiar with, and a way to discover stations via your Facebook and Spotify accounts. I didn't build it to look good after hundreds of people started using it, I built it to attract somebody when nothing was going on and didn't require activity, and that was a good call.</p>
+<p>In a similar vein, even though I talk about the lack of engagement by stations, I built Longtail Music to require as little usage by station owners as possible. The platform would feature a station when it plays a song for the first time and keep a record of artists that are often played on the station so station owners don't have to do anything for it to be obvious what type of content they're playing. It allowed the page for a station to always be up to date and featuring things without any human being involved.</p>
+<ol start="4">
+<li>Don't waste time building a user accounts system unless you need to.</li>
+</ol>
+<p>Unless the value of the product relies on accounts to exist, it's a waste of time. Longtail Music had user accounts where you could view your listening history, donation history, mark songs as favorites, like/dislike, etc. None of this was necessary. You could do most everything without a user account (on purpose), so I shouldn't have spent time building them in the first place. That's not where the value of the product was. It would have been a nice v2 addition if there were enough listeners and stations were active enough where they were generating content that should be pushed to individual users.</p>
+<ol start="5">
+<li>In general the scope of the product was too big.</li>
+</ol>
+<p>I built it all, and it had everything I wanted, so it's not like the large scope had any real downsides other than it took longer to build. But, like the user accounts, I probably shouldn't have started with the donations platform or any of the special features for station owners. All of the dashboards and special station-owner features were probably never even looked at. While seeing graphs about who's tuning in and when and what songs are popular are very cool, it's not terribly useful early on, and really not useful if the station owner isn't even logging in.</p>
+<ol start="6">
+<li>Don't spend time on all the dumb &quot;social stuff&quot;.</li>
+</ol>
+<p>I spent a lot of time working on integration with Twitter and Facebook. Both from the automated posting standpoint, and using Facebook and Spotify data to match you up with stations via your social listening history. I also spent a bunch of time on server-rendered pages for every part of the site so OpenGraph tags would render for anybody who linked to it. None of this was required or helpful.</p>
+<ol start="7">
+<li>All the real-time interactive user stuff wasn't very useful with so few users.</li>
+</ol>
+<p>While it was super cool to see, in real-time, users around you react to songs and tune into stations, it wasn't very useful, and it took a lot of work to build.</p>
+<h3 id="what-s-next" tabindex="-1">What's next?</h3>
+<p>Nothing new, actually. I'm currently working on an update for The Bat Player for AppleTV and I look forward to getting that out in 2020. It's been a long time since I've worked on it, and it needs some updates.</p>
+<p>Unlike social web sites where you require some critical mass before you can call yourself a success, a useful application is a success for each person who installs it and uses it.</p>
+<p>So I'm going &quot;back to my roots&quot;, if you will, and making sure the client for existing internet radio lovers is in good shape.</p>
+<p>As far as the future, I haven't given up on the idea of introducing more people to internet radio and making it more accessible and modern. I just don't know how to do it. I'll keep thinking. In the mean time I'll put on some good tunes and listen to internet radio somewhere else.</p>
+</main>
+<aside>
+<div class="sidebar">
+<div class="sidebar-container">
+<script>async function fetchGraphData(){const e=await fetch("/graph.json").then((e=>e.json()));return{graphData:e,fullGraphData:filterFullGraphData(e)}}function getNextLevelNeighbours(e,t){const n=Object.values(e).map((e=>e.neighbors)).flat();return Object.keys(t).reduce(((r,l)=>(-1!=n.indexOf(l)?t[l].hide||(e[l]=t[l]):r[l]=t[l],r)),{})}function filterLocalGraphData(e,t){if(null==e)return null;let n=JSON.parse(JSON.stringify(e.nodes)),r=JSON.parse(JSON.stringify(e.links)),l=n[decodeURI(window.location.pathname)]||Object.values(n).find((e=>e.home));if(delete n[l.url],!l.home){delete n[Object.values(n).find((e=>e.home)).url]}l.current=!0;let i={};i[l.url]=l;for(let e=0;e<t;e++)n=getNextLevelNeighbours(i,n);nodes=Object.values(i),l.home||(nodes=nodes.filter((e=>!e.home)));let o=nodes.map((e=>e.id));return{nodes:nodes,links:r.filter((function(e){return o.indexOf(e.target)>-1&&o.indexOf(e.source)>-1}))}}function getCssVar(e){return getComputedStyle(document.body).getPropertyValue(e)}function htmlDecode(e){return(new DOMParser).parseFromString(e,"text/html").documentElement.textContent}function renderGraph(e,t,n,r){if(null==e)return;const l=document.getElementById(t);width=l.offsetWidth,height=l.offsetHeight;const i=new Set;let o=null;const a=getCssVar("--graph-main"),s=getCssVar("--graph-muted");let u=ForceGraph()(l).graphData(e).nodeId("id").nodeLabel("title").linkSource("source").linkTarget("target").d3AlphaDecay(.1).width(width).height(height).linkDirectionalArrowLength(2).linkDirectionalArrowRelPos(.5).autoPauseRedraw(!1).linkColor((e=>null==o||e.source.id==o.id||e.target.id==o.id?a:s)).nodeCanvasObject(((e,t)=>{const n=e.neighbors&&e.neighbors.length||2,r=Math.min(7,Math.max(n/2,2));t.beginPath(),t.arc(e.x,e.y,r,0,2*Math.PI,!1),null==o||e==o||i.has(e.url)?t.fillStyle=a:t.fillStyle=s,t.fill(),e.current&&(t.beginPath(),t.arc(e.x,e.y,r+1,0,2*Math.PI,!1),t.lineWidth=.5,t.strokeStyle=a,t.stroke());const l=htmlDecode(e.title);t.font="3.5px Sans-Serif",t.textAlign="center",t.textBaseline="top",t.fillText(l,e.x,e.y+r+2)})).onNodeClick((e=>{window.location=e.url})).onNodeHover((e=>{i.clear(),e&&(i.add(e),e.neighbors.forEach((e=>i.add(e)))),o=e||null}));return(r||null!=n&&e.nodes.length>4)&&setTimeout((()=>{u.zoomToFit(5,75)}),n||200),u}function renderLocalGraph(e,t,n){window.graph&&window.graph._destructor();return renderGraph(filterLocalGraphData(e,t),"link-graph",null,n)}function filterFullGraphData(e){if(null==e)return null;e=JSON.parse(JSON.stringify(e));const t=Object.values(e.nodes).filter((e=>e.hide)).map((e=>e.id));return{links:JSON.parse(JSON.stringify(e.links)).filter((e=>-1==t.indexOf(e.source)&&-1==t.indexOf(e.target))),nodes:[...Object.values(e.nodes).filter((e=>!e.hide))]}}function openFullGraph(e){return lucide.createIcons({attrs:{class:["svg-icon"]}}),renderGraph(e,"full-graph-container",200,!1)}function closefullGraph(e){return e&&e._destructor(),null}</script>
+<div x-init="{graphData, fullGraphData} = await fetchGraphData();" x-data="{ graphData: null, depth: 1, graph: null, fullGraph: null, showFullGraph: false, fullScreen: false, fullGraphData: null}" id="graph-component" x-bind:class="fullScreen ? 'graph graph-fs' : 'graph'" v-scope>
+<div class="graph-title-container">
+<div class="graph-title">Connected Pages</div>
+<div id="graph-controls">
+<div class="depth-control">
+<label for="graph-depth">Depth</label>
+<div class="slider">
+<input x-model.number="depth" name="graph-depth" list="depthmarkers" type="range" step="1" min="1" max="3" id="graph-depth">
+<datalist id="depthmarkers">
+<option value="1" label="1"></option>
+<option value="2" label="2"></option>
+<option value="3" label="3"></option>
+</datalist>
+</div>
+<span id="depth-display" x-text="depth"></span>
+</div>
+<div class="ctrl-right">
+<span id="global-graph-btn" x-on:click="showFullGraph = true; setTimeout(() => {fullGraph = openFullGraph(fullGraphData)}, 100)"><i icon-name="globe" aria-hidden="true"></i></span>
+<span id="graph-fs-btn" x-on:click="fullScreen = !fullScreen"><i icon-name="expand" aria-hidden="true"></i></span>
+</div>
+</div>
+</div>
+<div x-effect="window.graph = renderLocalGraph(graphData, depth, fullScreen)" id="link-graph"></div>
+<div x-show="showFullGraph" id="full-graph" class="show" style="display:none">
+<span id="full-graph-close" x-on:click="fullGraph = closefullGraph(fullGraph); showFullGraph = false;"><i icon-name="x" aria-hidden="true"></i></span><div id="full-graph-container"></div>
+</div>
+</div>
+<div class="toc">
+<div class="toc-title-container">
+<div class="toc-title">
+On this page
+</div>
+</div>
+<div class="toc-container">
+<nav class="toc">
+<ol>
+<li><a href="#for-longtail-music-to-exist-in-any-way-the-following-needed-to-be-true">For Longtail Music to exist in any way the following needed to be true:</a>
+</li>
+<li><a href="#what-i-wanted-to-provide-for-stations">What I wanted to provide for stations.</a>
+</li>
+<li><a href="#what-i-wanted-to-provide-for-listeners">What I wanted to provide for listeners</a>
+</li>
+<li><a href="#what-went-wrong">What went wrong</a>
+</li>
+<li><a href="#what-worked">What worked</a>
+</li>
+<li><a href="#what-i-learned">What I learned</a>
+</li>
+<li><a href="#what-s-next">What's next?</a>
+</li>
+</ol>
+</nav>
+</div>
+</div>
+<div class="backlinks">
+<div class="backlink-title" style="margin:4px 0!important">Pages mentioning this page</div>
+<div class="backlink-list"><div class="backlink-card">
+<span class="no-backlinks-message">No other pages mentions this page</span>
+</div></div>
+</div>
+</div>
+</div>
+</aside>
+<script>window.location.hash&&document.getElementById(window.location.hash.slice(1)).classList.add("referred"),window.addEventListener("hashchange",(e=>{const t=e.oldURL.split("#");t[1]&&document.getElementById(t[1]).classList.remove("referred");const n=e.newURL.split("#");n[1]&&document.getElementById(n[1]).classList.add("referred")}),!1);const url_parts=window.location.href.split("#"),url=url_parts[0],referrence=url_parts[1];document.querySelectorAll(".cm-s-obsidian > *[id]").forEach((function(e){e.ondblclick=function(e){const t=url+"#"+e.target.id;navigator.clipboard.writeText(t)}}))</script>
+<script src="https://fastly.jsdelivr.net/npm/luxon@3.2.1/build/global/luxon.min.js"></script>
+<script defer="defer">TIMESTAMP_FORMAT="MMM dd, yyyy h:mm a",document.querySelectorAll(".human-date").forEach((function(e){date=e.getAttribute("data-date")||e.innerText,parsed_date=luxon.DateTime.fromISO(date),null!=parsed_date.invalid&&(parsed_date=luxon.DateTime.fromSQL(date)),null!=parsed_date.invalid&&(parsed_date=luxon.DateTime.fromHTML(date)),e.innerHTML=parsed_date.toFormat(TIMESTAMP_FORMAT)}))</script>
+<script>lucide.createIcons({attrs:{class:["svg-icon"]}})</script>
+</body>
+</html>
