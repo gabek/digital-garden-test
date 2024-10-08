@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/personal/blog-posts/owncast-s-4th-anniversary/","tags":["gardenEntry"]}
+{"dg-publish":true,"permalink":"/personal/blog-posts/owncast-s-4th-anniversary/","tags":["gardenEntry"],"noteIcon":""}
 ---
 
 May 23rd, 2024 marks the 4th anniversary of the first commit of Owncast, aptly titled: “WIP”. 
