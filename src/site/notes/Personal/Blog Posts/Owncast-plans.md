@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/personal/blog-posts/owncast-plans/","noteIcon":""}
+{"dg-publish":true,"permalink":"/personal/blog-posts/owncast-plans/","tags":["owncast"],"noteIcon":""}
 ---
 
 While I try to keep a public roadmap, and keep a reasonable plan for Owncast I rarely have an opportunity to gush about features I’m looking forward to building. So I thought I’d write a quick blog post to share some of my personal thoughts about the my vision of Owncast from a high level.
